@@ -1,0 +1,92 @@
+<div class="grupo">
+    <br><br>
+    Agora vamos criar o arquivo index.html em src/main/resource / templates<br>
+    Vamos criar nosso primeiro arquivo de visualizaÃ§Ã£o View
+    <br>
+    Este arquivo serÃ¡ um HTML
+    <br><br>
+    <img src="springboot/criando-arquivo-index.png" class="img-fluid" > 
+    <br><br>
+    <br><br>
+    <img src="springboot/criando-arquivo-index2.png"  class="img-fluid" > 
+    <br><br>
+    Seu conteÃºdo serÃ¡  em HTML basico
+    <br><br>
+    <pre><textarea rows=5 cols=100 readonly>
+    &lt;!DOCTYPE html&gt;
+    &lt;html lang="pt-br"&gt;
+    &lt;head&gt;
+    &lt;title>Ola Mundo!&lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+     &lt;h1&gt;Ola Mundo com Spring Boot&lt;/h1&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+        
+     </textarea></pre>
+    <br><br>
+    <br><br>
+     Agora vamos criar uma class  controlador. No caso na packape  controllers
+     <br><br>
+    <br><br>
+    <img src="springboot/criando-class-controller.png"  class="img-fluid" > 
+    <br><br>
+    
+    Vamos chamar de ControllerBasic
+    Observe que Ã© apenas uma classe
+    <br><br>
+    <br><br>
+     Agora vamos criar uma class  controlador. No caso na packape  controllers
+     <br><br>
+    <br><br>
+    <img src="springboot/visualizando-class-controller.png"  class="img-fluid" > 
+    <br><br>
+    Para que o Spring Boot saiba que Ã© um controller teremos que colocar anotaÃ§Ã£o esta Ã© a maneira que o Spring Boot identifica atravÃ©s das anotaÃ§Ãµes. Digite @Controller acima do public class ControllerBasic
+    
+    <br><br>
+    
+    Observe que apos colocar @Controller foi importado um pacote, entao deve ficar assim
+    <br><br>
+    <br><br>
+    <pre><textarea rows=5 cols=100 readonly>
+    package com.providerhost.controllers;
+    import org.springframework.stereotype.Controller;
+    import org.springframework.web.bind.annotation.GetMapping;
+    import org.springframework.web.bind.annotation.RequestMapping;
+    
+    @Controller
+    @RequestMapping("/ola")
+    public class ControllerBasic {
+        @GetMapping(path = {"/", "/ola"})
+        public String home() {
+            return "index";
+        }
+    }
+    
+     </textarea></pre>
+    <br><br>
+    Salve e execute <br>
+    Observe seu console <br>
+    Va para seu browser e digite localhost ou localhos/ola
+    Veja aqui nao utilizamos o :8080  
+    
+     <br><br>
+    <br><br>
+    <img src="springboot/olaMundo.png" class="img-fluid" > 
+    <br><br>
+    Feito nosso primeiro Ola Mundo com Spring Boot
+    <br><br>
+    
+    <div class="card text-white bg-primary mb-3" >
+      <div class="card-header">
+        Considerações Utilizando Spring Tools
+      </div>
+      <div class="card-body">
+       
+        <p class="card-text">
+            Utilizar o Spring Tools torna facil, pois já vem embarcado o Maven o Toquest e as dependencias nao tem problema nas versÃµes. <br> 
+        </p>
+       
+      </div>
+    </div>
+    </div>

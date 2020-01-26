@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<h1>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spring</title>
+     <!-- HEAD -->
+    <%- include('partials//head.html') %>
+</head>
+
+<body>
+     <!-- NAVBAR -->
+    <%- include('partials//navbar.html') %>
+
+     
+  
+   <!-- Content Wrapper. Contains page content -->
+   <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header"><h4><br><center>Spring Boot</center><br></h4></section>
+    <!-- Main content -->
+      <section class="content">
+        <div class="box box-solid">
+           <div class="box-body">
+             <div class=container>
+                               
+                <nav>
+                 <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                   <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">Apresentação</a>
+                   <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Instalaçãoo</a>
+                   <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Configurações</a>
+                    <a class="nav-item nav-link" id="nav-projetot-tab" data-toggle="tab" href="#nav-projeto" role="tab" aria-controls="nav-projeto" aria-selected="false">Primeiro Projeto</a>
+                 </div>
+               </nav>
+               <div class="tab-content" id="nav-tabContent">
+                 <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                       <br>
+                       <br>
+                        <p class="lead text-muted">Na parte de Back-end:
+                        JDK 8, Spring Tools, Spring Boot, MySQL</p>
+
+                       <br>
+                       Para facilitar vou criar uma pasta Develop no raiz c:\Develop assim concentrarei todas as ferramentais, bibliotecas, entre outras coisas que venha a utilizar. 
+                       Dentro da pasta criei as seguintes  subpastas: <br><br>
+
+                       IDE  - Onde colocarei uma cÃ³pia do  Spring Tools <br>
+                       Workspace  - Para deixar os teste e projetos que desenvolverei
+
+
+                 </div>
+                 <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                     
+                       <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                         <li class="nav-item">
+                         
+                           <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-STools" role="tab" aria-controls="pills-home" aria-selected="true">Com Spring Tools</a>
+                         </li>
+                         <li class="nav-item">
+                           <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-Eclipse" role="tab" aria-controls="pills-profile" aria-selected="false">Com Spring Initializr e Eclipse</a>
+                         </li>
+                         <li class="nav-item">
+                           <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-Netbeans" role="tab" aria-controls="pills-contact" aria-selected="false">Com Spring Initializr e NetBeans</a>
+                         </li>
+                       </ul>
+                       <div class="tab-content" id="pills-tabContent">
+                         <div class="tab-pane fade show active" id="pills-STools" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <%- include('spring//initspringtool.html') %>
+                         </div>
+                         <div class="tab-pane fade" id="pills-Eclipse" role="tabpanel" aria-labelledby="pills-profile-tab">...</div>
+                         <div class="tab-pane fade" id="pills-Netbeans" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+                       </div>
+
+
+                 </div>
+                 <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                    <%- include('spring//modulando.html') %>
+                 </div>
+                  <div class="tab-pane fade" id="nav-projeto" role="tabpanel" aria-labelledby="nav-projeto-tab">
+                    <%- include('spring//projetoum.html') %>
+                  </div>
+               </div>
+
+
+             </div>
+           </div>
+         </div>
+     </section>
+    <!-- /.content -->
+   </div>
+   <!-- /.content-wrapper -->
+
+
+ 
+   
+
+
+    <!-- FOOTER -->
+    <%- include('partials//footer.html') %>
+
+</body>
+
+</html>
