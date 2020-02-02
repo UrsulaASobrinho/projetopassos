@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<h1>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spring</title>
+    <!-- HEAD -->
+    <%- include('..//partials//head.html') %>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <%- include('..//partials//navbar.html') %>
+
+   <!-- MAIN CONTENT -->
+
+   <main role="main">
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="row">
+           
+                
+                <div class="grupo">
+                    <br><br>
+                    <h4>Node.js</h4>
+                    <br><br>
+                    <h5>O que é</h5>
+                    <br>
+                    O Node.ja  De uma forma bem simplista vou dizer que é um servidor, que utilizaremos para emular/rotas em ambiente (http:, https: ...).
+                    <br><br>
+                    <h5>Instalação</h5>
+                    <br>
+                    No site https://nodejs.org/en/   fiz o dewnloads da ultima verssão, no meu caso já identificou que estou em ambiente windows 10 de 64x.  Apenas cliquei em Next. A instalação é bem simples e facil.
+                    <br><br>
+                     Instalando o nodejs e o npm no Windows - Geralmente tem duas versãs a LTS que tem suporte de longo prazo e a Current que Ã© a ultima versão.
+                    <br><br>
+                    <img src="img-nodejs/nodejs.png"  class="img-fluid" alt="site downloads nodejs.org" title="site downloads nodejs.org"> 
+                    <br>
+                    Escolha a versão de sua preferencia e baixe o instalador para o seu sistema operacional, no meu caso Ã© o Windows 64 bits.
+                    Apos baixar, Copei na pasta Develop/TOOLS e executei.
+                    
+                    <br>
+                    A primeira tela do instalador do NodeJs apresenta uma mensagem de boas vindas do instalador informando que sera instalado o Node.js no seu computador,  clica em Next para continuar.
+                    
+                    <br><br> 
+                    <img src="img-nodejs/executando-nodejs-tela-inicial.png"  class="img-fluid" alt="executando nodejs tela de boa visdas" title="executando node.js"> 
+                    <br><br> 
+                    A segunda tela do instalador do NodeJs pede para ler a licença de uso e aceitar os termos. Marque a caixinha I accept ... e clique em Next para continuar.<br><br> 
+                    
+                    <img src="img-nodejs/executando-nodejs.png"  class="img-fluid" alt="pede para ler a licenÃ§a de uso e aceitar os termos" title="termos de uso">
+                    <br><br> 
+                    A terceira tela oferece a opção de alterar a pasta onde o NodeJS sera instalado,  clique em Next para continuar.
+                    
+                     
+                    <br><br> 
+                    
+                    <img src="img-nodejs/executando-nodejs-tela-diretorio-instalacao.png"  class="img-fluid" alt="opcao de alterar a pasta onde o NodeJS serÃ¡ instalado" title="opcao de alterar a pasta / diretorio">
+                    <br><br> 
+                    
+                    Na sequencia o instalador permite personalizar algumas opçõeses da instalação como adicionar ou nÃ£o o caminho do node e npm na variÃ¡vel PATH, etc. Eu deixo todas as opÃ§Ãµes marcadas. Clique em Next para continuar. 
+                    <br><br>
+                    <img src="img-nodejs/executando-nodejs-tela-que-mostra-modulos.png"  class="img-fluid" alt="opcao de alterar a pasta onde o NodeJS sera instalado" title="opcao de alterar a pasta / diretorio">
+                    <br><br>
+                     Por ultimo o instalador pergunta se queremos instalar as ferramentas necessÃ¡rias para compilar modulos nativos. Se voce marcar a caixinha para instalar essas ferramentas, o instalador vai iniciar outra janela para instalar essas ferramentas. Eu marquei, escolha se vocÃª deseja essa opÃ§Ã£o e Clique em Next para continuar.
+                    <br><br>
+                    <img src="img-nodejs/executando-nodejs-tela-clique-automaicainstalacao.png"  class="img-fluid" alt="opcao  ferramentas necessÃ¡rias para compilar modulos nativos" title=" ferramentas necessÃ¡rias para compilar mÃ³dulos nativos">
+                    <br><br>
+                    
+                    O Windows vai pedir permissÃ£o de administrador para instalar o NodeJS.
+                    <br><br>
+                    <br><br>
+                    <img src="img-nodejs/executando-nodejs-permissao-para-instalacao.png"  class="img-fluid" alt="opcao  ferramentas necessarias para compilar modulos nativos" title=" ferramentas necessÃ¡rias para compilar mÃ³dulos nativos">
+                    <br><br>
+                    Pronto". Terminada a instalacao clique em Finish e pronto.
+                    
+                    
+                    <br>
+                    
+                    Para verificar se o node e o npm foi instalado corretamente, basta executar node --version e npm --version na linha de comando conforme a imagem abaixo.
+                    <img src="img-nodejs/executand-nodejs.teste.png"  class="img-fluid" alt="opção  ferramentas necessÃ¡rias para compilar modulos nativos" title=" ferramentas necessÃ¡rias para compilar mÃ³dulos nativos">
+                    
+                    
+                    
+                    
+                    <br><br>
+                    <br><br>
+                    
+                    
+                    
+                    
+                    <div class="card text-white bg-primary mb-3" >
+                      <div class="card-header">
+                        Possi­veis erros
+                      </div>
+                      <div class="card-body">
+                       
+                        <p class="card-text">
+                         Só uma coisa precisei iniciar o computador para conseguir fazer o teste 
+                        <br>
+                      
+                        </p>
+                       
+                      </div>
+                    </div>
+                    
+                    </div>
+
+               
+            </div>
+        </div>
+    </div>
+
+
+</main>
+
+
+
+
+
+    <!-- FOOTER -->
+    <%- include('..//partials//footer.html') %>
+
+</body>
+
+</html>

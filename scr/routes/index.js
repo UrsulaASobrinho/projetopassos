@@ -11,15 +11,39 @@ router.get('/', (req, res, next) => {
 
 router.get('/contato', (req, res, next) => {
     res.render('contato.html', {
-        title: "Entre em contato "
+        title: "Contato"
+    });
+});
+
+router.get('/livros', (req, res, next) => {
+    res.render('livros.html', {
+        title: "Livros"
     });
 });
 
 router.get('/spring', (req, res, next) => {
     res.render('spring.html', {
-        title: "Primeiros passos com Spring "
+        title: "Spring Boot "
     });
 });
 
+router.get('/node', (req, res, next) => {
+    res.render('node.html', {
+        title: "Node js"
+    });
+});
+
+router.get('/instnodejs', (req, res, next) => {
+    res.render('nodejs/instnodejs.html', {
+        title: "Node js - Install"
+    });
+});
+
+
+router.get('/deploy', (req, res, next) => {
+    res.render('nodejs/deploy.html', {
+        title: "Node js - Deploy"
+    });
+});
 
 module.exports = router;

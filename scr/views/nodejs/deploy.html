@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<h1>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Spring</title>
+    <!-- HEAD -->
+    <%- include('..//partials//head.html') %>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <%- include('..//partials//navbar.html') %>
+
+   <!-- MAIN CONTENT -->
+
+   <main role="main">
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="row">
+           
+                
+                <div class="grupo">
+                    <br><br>
+                    <h4>Deploy  aplicação Node js com Git , Heroku </h4>
+                    <br><br>
+                    O passo a passo
+                    <br><br> <br><br>
+                    Pre requisitos <br><br>
+                    Já eve ter criado sua conta no GitHub, Heroku<br><br>
+a) Criei a pasta do projeto <br>
+b) depois criei uma pasta com o mesmo nome  no  heroku create projetopassos <br>
+c) Iniciei um projeto simples  com express npm init –yes <br>
+d) Criei uma  extrututa MVC<br>
+	scr<br>
+	  public<br>
+	  routes<br>
+	  viwes<br>
+	      partials	<br><br>
+e) utilizei as bibliotecas npm i express ejs morgan<br>
+                                       npm i nodemon -D<br>
+f) Criei o ..gitignore  para não subir a pasta node_modulos<br>
+g) Outro detalhe esta no package.json<br>
+
+
+<br><br>
+<pre><textarea rows=5 cols=100 readonly>
+&lt;"scripts": {   &gt;
+&lt; "dev": "nodemon scr",&gt;
+&lt;"start": "node scr",&gt;
+&lt; "test": "echo \"Error: no test specified\" && exit 1"&gt;
+&lt; },&gt;
+
+    
+ </textarea></pre>
+	  
+    
+   
+ 
+
+h) Criei Procfile , que é um detalhe importante este arquivo dentro dele coloquei <br>
+	web: npm start<br>
+
+
+
+  <br><br>
+Logo criei algumas viwes, rotas e montei um servidor de blog, poderia ser qualquer tipo de modelos projeto. Pedido, Frente de loja etc, criei o blog para disponibilizar meus testes
+<br><br>
+i)  Foi no github criei a pasta  iniciei o git init na maquina <br>
+j) fiz o link do projeto local com o github<br>
+git remote add origin https://github.com/UrsulaASobrinho/projetopassos.git<br>
+git add .  <br>
+git commit -m "adciona projeto no horoku"<br>
+ git push -u origin master<br>
+ <br><br>
+k) vá no heroku opção deploy , escolhar git e coloquei o mesmo link que utilizou para remote e click na opção atualizar automaticamente
+
+                <br>
+                Mais a baixo na mesma tela click em fazer o primeiro deploy manualmente
+Pegue o link  fornecido pelo heroku e abrano brouwse <br>
+https://projetopassos.herokuapp.com <br>
+
+Feito!    
+                    <br><br>
+                    <br><br>
+                    
+                    
+                    
+                    
+                    <div class="card text-white bg-primary mb-3" >
+                      <div class="card-header">
+                        Possi­veis erros
+                      </div>
+                      <div class="card-body">
+                       
+                        <p class="card-text">
+                        ... 
+                        <br>
+                      
+                        </p>
+                       
+                      </div>
+                    </div>
+                    
+                    </div>
+
+               
+            </div>
+        </div>
+    </div>
+
+
+</main>
+
+
+
+
+
+    <!-- FOOTER -->
+    <%- include('..//partials//footer.html') %>
+
+</body>
+
+</html>
