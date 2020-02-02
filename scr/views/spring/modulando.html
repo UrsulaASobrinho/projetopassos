@@ -1,22 +1,22 @@
 <div class="grupo">
     <br><br>
-    <h4>ConfiguraÃ§Ãµes</h4>
+    <h4>Configuraçoes</h4>
     <br><br>
     Vamos fazer alguns ajuste 
     <br><br>
-    A  primeira coisa Ã© criarmos pacotes ou packages para ficar no padrÃ£o MVC
+    A  primeira coisa é criarmos pacotes ou packages para ficar no padrao MVC
     <br><br>
     
-    O que sÃ£o <br><br>
-    Pacotes -  A priore podemos dizer que Ã© uma pasta com o nome que identifique seu conteÃºdo. Neste caso a pasta  contem um grupo de classes relacionadas, onde algumas das classes sÃ£o acessÃ­veis e outras sÃ£o mantidas para fins internos.
+    O que é <br><br>
+    Pacotes -  A priore podemos dizer que é uma pasta com o nome que identifique seu conteudo. Neste caso a pasta  contem um grupo de classes relacionadas, onde algumas das classes são acessÃiveis e outras sao mantidas para fins internos.
     <br><br>
     Porque utilizar<br><br>
-    LocalizaÃ§Ã£o e uso de classes, interfaces, enumeraÃ§Ãµes e anotaÃ§Ãµes mais fÃ¡ceis 
-    Fornecendo acesso controlado: protected e default possuem controle de acesso em nÃ­vel de pacote. Um membro protegido Ã© acessÃ­vel por classes no mesmo pacote e suas subclasses. Um membro padrÃ£o (sem qualquer especificador de acesso) Ã© acessÃ­vel por classes no mesmo pacote apenas.
+    Localização e uso de classes, interfaces, enumeraçoes e anotações mais faceis 
+    Fornecendo acesso controlado: protected e default possuem controle de acesso em nÃivel de pacote. Um membro protegido é acessi­vel por classes no mesmo pacote e suas subclasses. Um membro padrão (sem qualquer especificador de acesso) é acessivel por classes no mesmo pacote apenas.
     <br><br>
     Como utilizar<br><br>
-    ConvenÃ§Ãµes de nomenclatura de pacotes:
-    Os pacotes sÃ£o nomeados na ordem inversa dos nomes de domÃ­nio, ou seja, br.com.prividerhost.vendaspdv. Por exemplo, utilizei o nome do meu domÃ­nio, mais o nome do projeto 
+    Convenções de nomenclatura de pacotes:
+    Os pacotes são nomeados na ordem inversa dos nomes de domi­nio, ou seja, br.com.prividerhost.vendaspdv. Por exemplo, utilizei o nome do meu domÃ­nio, mais o nome do projeto 
     <br><br>
     Na pratica!
     <br><br>
@@ -41,16 +41,16 @@
     
     <div class="card text-white bg-primary mb-3" >
       <div class="card-header">
-        ObservaÃ§Ãµes 
+        Observações 
       </div>
       <div class="card-body">
        
         <p class="card-text">
-            O que Ã© MVC?:<br>
-            MVC Ã© atualmente o padrÃ£o arquitetural mais utilizado no desenvolvimento web, portanto seu conhecimento Ã© fundamental para a construÃ§Ã£o de projetos bem estruturados. <br>
-            E normal encontrar no PHP as pastas   Model, View, Controller e DAO. JÃ¡ no java dependendo de qual fremework se utilza ou se Ã© Java para Web ou Desktop se muda essa nomenclatura. Por exemplo neste projeto as view fica em src/main/resources pasta templates.  E os css,js dentro src/main/resources pasta static.<br>
+            O que é MVC?:<br>
+            MVC é atualmente o padrão arquitetural mais utilizado no desenvolvimento web, portanto seu conhecimento é fundamental para a construção de projetos bem estruturados. <br>
+            E normal encontrar no PHP as pastas   Model, View, Controller e DAO. Ja no java dependendo de qual fremework se utilza ou se Ã© Java para Web ou Desktop se muda essa nomenclatura. Por exemplo neste projeto as view fica em src/main/resources pasta templates.  E os css,js dentro src/main/resources pasta static.<br>
     
-            O importante Ã© sempre observar e seguir um padrÃ£o lÃ³gico. 
+            O importante é sempre observar e seguir um padrao logico. 
         </p>
        
       </div>
@@ -60,9 +60,9 @@
     <br><br>
     <br><br>
     
-     application.properties Ã© o arquivo onde adicionamos as configuraÃ§Ãµes para o projeto. 
+     application.properties é o arquivo onde adicionamos as configuraçõµes para o projeto. 
     
-    O SpringBoot disponibiliza uma documentaÃ§Ã£o ampla onde podemos entender todas as configuraÃ§Ãµes doÂ application.properties: 
+    O SpringBoot disponibiliza uma documentaÃ§Ã£o ampla onde podemos entender todas as configurações do application.properties: 
     
     
     http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html 
@@ -80,7 +80,7 @@
     <br><br> <br><br>
     <h4>Configurando pom.xml</h4>
     <br><br> <br><br>
-    POM Ã© a unidade fundamental de trabalho no Maven. Ã‰ um arquivo XML que contÃ©m informaÃ§Ãµes sobre o projeto e detalhes de configuraÃ§Ã£o usados  pelo Maven para construir o projeto.
+    POM é a unidade fundamental de trabalho no Maven. É um arquivo XML que contÃ©m informações sobre o projeto e detalhes de configuraÃ§Ã£o usados  pelo Maven para construir o projeto.
     
     <br><br> <br><br>
     Agora, no arquivos pom.xml,  para tando clique no arquivo. veja na imagem abaixo
@@ -88,11 +88,11 @@
     <img src="springboot/visualizando-conteudo-arquivo-pom.png"  class="img-fluid" alt="visualizando o conteudo dop arquivo" title="visualizando o arquivo pom.xml"> 
     <br><br>
     
-    Basicamente o que vamos mexer Ã© as dependÃªncias, no caso incluir mais.<br>
-    Mais antes observando o que jÃ¡ vem.
+    Basicamente o que vamos mexer são as dependencias, no caso incluir mais.<br>
+    Mais antes observando o que ja vem.
     <br>
-    - o spring-boot-starter-web, que adiciona as dependÃªncias do Spring MVC;<br>
-    - O spring-boot-starter-test Ã© a principal dependÃªncia que contÃ©m a maioria dos elementos necessÃ¡rios para  testes;<br>
+    - o spring-boot-starter-web, que adiciona as dependencias do Spring MVC;<br>
+    - O spring-boot-starter-test é a principal dependÃªncia que contem a maioria dos elementos necessarios para  testes;<br>
     
     <br><br>A estrutura Ã© esta <br><br>
     <pre><textarea rows=5 cols=100 readonly>
@@ -107,15 +107,15 @@
     
     
     <br><br> <br><br>
-    Aqui o Spring Boot facilita a vida do programador. Ã‰ sÃ³ incluir as dependencias que necessitamos e o spring boot faz o downloads da versao correta sem conflitos de instalaÃ§Ã£o. 
+    Aqui o Spring Boot facilita a vida do programador. É só incluir as dependencias que necessitamos e o spring boot faz o downloads da versao correta sem conflitos de instalaÃ§Ã£o. 
      <br><br>
     <img src="springboot/incluindo-pedendecias.png"  class="img-fluid" alt="incluindo dependÃªncia" title="incluindo-pedendecias"> 
     <br><br>
     
-    Vamos incluir no arquivos pom.xml  a dependÃªncia spring-boot-starter-thymeleaf<br>
+    Vamos incluir no arquivos pom.xml  a dependencia spring-boot-starter-thymeleaf<br>
     <br><br>
     
-    Thymeleaf Ã© uma biblioteca baseada em Java usada para criar um aplicativo da web. Ele fornece um bom suporte para servir um XHTML / HTML5 em aplicativos da web. 
+    Thymeleaf é uma biblioteca baseada em Java usada para criar um aplicativo da web. Ele fornece um bom suporte para servir um XHTML / HTML5 em aplicativos da web. 
     <br><br>
     <pre><textarea rows=5 cols=100 readonly>
     
@@ -127,7 +127,7 @@
      </textarea></pre>
     <br><br>
     
-    AtÃ© aqui sÃ³ configuramos â€¦
+    Até aqui só configuramos ...
     
     </div>
     

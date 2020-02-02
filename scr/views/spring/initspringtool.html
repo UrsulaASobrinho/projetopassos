@@ -4,7 +4,7 @@
     <br><br>
     <h5>O que é</h5>
     <br>
-    O Spring Tool Suite Ã© um ambiente de desenvolvimento baseado em Eclipse que Ã© customizado para desenvolver aplicativos Spring. Ele fornece um ambiente pronto para uso para implementar, depurar, executar e implantar seus aplicativos Spring, incluindo integrações para o Pivotal tc Server, o Pivotal Cloud Foundry, o Git, o Maven, o AspectJ e muito mais. 
+    O Spring Tool Suite é um ambiente de desenvolvimento baseado em Eclipse que Ã© customizado para desenvolver aplicativos Spring. Ele fornece um ambiente pronto para uso para implementar, depurar, executar e implantar seus aplicativos Spring, incluindo integrações para o Pivotal tc Server, o Pivotal Cloud Foundry, o Git, o Maven, o AspectJ e muito mais. 
     <br><br>
     <h5>Instalação</h5>
     <br>
@@ -50,20 +50,20 @@
     <br>
     Type Deixe maven selecionado 
     <br>
-    <b>Packaging</b> A forma como o projeto será empacotado. Deixe o valor padrão, jar. Isso significa que o projeto todo serÃ¡ compilado para um Ãºnico arquivo .jar, que poderÃ¡ ser executado pelo Maven. Existe tambÃ©m a opÃ§Ã£o .war que Ã© uma outra forma de empacotar o projeto, sÃ³ que para ser usada como um container de algum servidor web, como o Tomcat.
+    <b>Packaging</b> A forma como o projeto será empacotado. Deixe o valor padrão, jar. Isso significa que o projeto todo serÃ¡ compilado para um Ãºnico arquivo .jar, que podera ser executado pelo Maven. Existe tambÃ©m a opção .war que é uma outra forma de empacotar o projeto, sÃ³ que para ser usada como um container de algum servidor web, como o Tomcat.
     <br>
-    <b>Java version</b> A versÃ£o do Java. Usamos a 8 como padrÃ£o, mas se houver uma superior nÃ£o Ã© necessÃ¡rio rebaixÃ¡-la.
-    Language Existem hoje, alÃ©m do Java, as linguagem Kotlin e Grovvy. Todas as 3 sÃ£o compiladas no mesmo ByteCode, entÃ£o vocÃª pode escolher a linguagem que estiver mais acostumado. 
+    <b>Java version</b> A versão do Java. Usamos a 8 como padrão.
+    Language Existem hoje, além do Java, as linguagem Kotlin e Grovvy. Todas as 3 são compiladas no mesmo ByteCode, então você pode escolher a linguagem que estiver mais acostumado. 
     Estamos utilizando Java.
     <br>
-    <b>Group</b> O group Ã© o inÃ­cio da definiÃ§Ã£o do seu package. Um â€œpackageâ€ deve ser um namespace â€œÃºnicoâ€ do seu projeto, em relaÃ§Ã£o a qualquer projeto Java. Para se obter isso, Ã© aconselhÃ¡vel usar a url do seu site pessoal ou da empresa onde trabalha, de forma invertida. Por exemplo, se o meu site Ã© providerhost.com.br, o Group seria br.com.providerhost. TambÃ©m pode deixar com.providerhost.
-    Artifact Ã© o nome do projeto que serÃ¡ concatenado ao Group. Suponha que o seu projeto se chama â€œGestÃ£o Comercialâ€, um bom nome de Artifact seria somente comercial.
+    <b>Group</b> O group é o iniicio da definição do seu package. Um package deve ser um namespace do seu projeto. Para se obter isso, é aconselhavel usar a url do seu site pessoal ou da empresa onde trabalha, de forma invertida. Por exemplo, se o meu site é providerhost.com.br, o Group seria br.com.providerhost. Tambem pode deixar com.providerhost.
+    Artifact é o nome do projeto que sera concatenado ao Group. Suponha que o seu projeto se chama Gestão Comercial, um bom nome de Artifact seria somente comercial.
     <br>
     <b>Version</b> è a versão do seu software. Deixe com -SNAPSHOT no final para que a versÃ£o seja compilada no modo desenvolvimento, com ferramentas extras de Debug, por exemplo.
     <br>
-    <b>Description</b> A descrição do projeto - Aqui geralmente se coloca uma breve descriÃ§Ã£o do que Ã© o projeto
+    <b>Description</b> A descrição do projeto - Aqui geralmente se coloca uma breve descrição do que é o projeto
     <br>
-    <b>package</b> O caminho completo do pacote da sua aplicação. Ã‰ comum usar o Group junto com o Artifact. No caso deste projeto, estamos usando com.providerhost.meuprojeto, entÃ£o lembre-se de alterar isso de acordo com a sua necessidade. Utilizarei com.providerhost.demoweb
+    <b>package</b> O caminho completo do pacote da sua aplicação. É comum usar o Group junto com o Artifact. No caso deste projeto, estamos usando com.providerhost.meuprojeto, entÃ£o lembre-se de alterar isso de acordo com a sua necessidade. Utilizarei com.providerhost.demoweb
     <br><br> 
     
     <img src="springboot/preenchendo-campo-projeto-web.png"  class="img-fluid" alt="preenchendo os dados" title="preenchendo informaÃ§oes">
@@ -71,18 +71,18 @@
     Clique em Next<br> 
     <br><br> 
     
-    Nesta tela Ã© onde  escolhemos as dependÃªncias do projeto, isso Ã©, os mÃ³dulos que compÃµem o projeto. Vamos escolher os seguintes mÃ³dulos:
+    Nesta tela Ã© onde  escolhemos as dependencias do projeto, isso Ã©, os modulos que compÃµem o projeto. Vamos escolher os seguintes modulos:
     <br><br> 
-    DevTools Fornece uma sÃ©rie de facilidades, dentre elas a habilidade de reiniciar o servidor instantaneamente apÃ³s uma modificaÃ§Ã£o no cÃ³digo fonte, e tambÃ©m com live-reload, que atualiza a pÃ¡gina web apÃ³s uma modificaÃ§Ã£o.
+    DevTools Fornece uma sÃ©rie de facilidades, dentre elas a habilidade de reiniciar o servidor instantaneamente apos uma modificaçãoo no codigo fonte, e tambÃ©m com live-reload, que atualiza a pÃ¡gina web apÃ³s uma modificaÃ§Ã£o.
     <br>
-    JPA Ã‰ a camada de persistÃªncia do Spring/Java, incluindo o Hibernate por exemplo. AtravÃ©s do JPA vamos criar classes java que sÃ£o o mapeamento de uma Tabela e realizar operaÃ§Ãµes de inclusÃ£o, exclusÃ£o e alteraÃ§Ã£o de dados.
+    JPA é a camada de persistÃªncia do Spring/Java, incluindo o Hibernate por exemplo. Através do JPA vamos criar classes java que sÃ£o o mapeamento de uma Tabela e realizar operaÃ§Ãµes de inclusÃ£o, exclusÃ£o e alteraÃ§Ã£o de dados.
     <br>
-    Web ProvÃª todas as funcionalidades Web junto com o servidor TomCat, permitindo que se possa criar rotas RESTfull de forma fÃ¡cil atravÃ©s de anotations.
-    MySql O mÃ³dulo MySql para que o JPA conecte no banco.
+    Web ProvÃª todas as funcionalidades Web junto com o servidor TomCat, permitindo que se possa criar rotas RESTfull de forma facil atraves de anotations.
+    MySql O modulo MySql para que o JPA conecte no banco.
     
-    E sÃ³ digitar no campo Avaliable:  por exemplo digite web <br> 
+    E sao digitar no campo Avaliable:  por exemplo digite web <br> 
     
-     Aqui podemos jÃ¡ incluir as dependÃªncias caso já¡ saiba o que vai utilizar vou deixar  selecionar Web, deixando assim para depois a inclusÃ£o  de mais dependÃªncias. <br> 
+     Aqui podemos ja incluir as dependencias caso já¡ saiba o que vai utilizar vou deixar  selecionar Web, deixando assim para depois a inclusao  de mais dependencias. <br> 
     
     Masquei Spring Web Start <br> 
     
@@ -91,7 +91,7 @@
     <br><br>
     <img src="springboot/selecione-dependecias.png" class="img-fluid" alt="preenchendo mais informaÃ§oes" title="preenchendo mais informaÃ§oes">
     <br><br> 
-    Ele vai processar agora Ã© sÃ³ aguardar um pouco...
+    Ele vai processar agora é só aguardar um pouco...
     <br><br> 
     Apos toda o processo meu primeiro projeto foi criado. Vou executa para ver se tudo correu bem. <br>
     Abro a pasta DemoWeb / src/main/java o pacote com.providerhost e clico no arquivo DemoWebApplication.java. Uma vez aberto o arquivo 
@@ -123,7 +123,7 @@
     
     <img src="springboot/visualizando-primeiro-projeto.png" class="img-fluid" alt="cisualizando o resultado no navegador" title="visualizando primeiro projeto">
     <br><br>
-    Como não programei nada até agora a mensagem é esta mesmo. Tudo certo.<br> A instalação do Spring Tools  e o inÃ­cio do projeto estÃ£o ok. 
+    Como não programei nada até agora a mensagem é esta mesmo. Tudo certo.<br> A instalação do Spring Tools  e o inicio do projeto estao ok. 
     
     
     <br><br>
