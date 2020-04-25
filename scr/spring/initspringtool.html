@@ -1,0 +1,152 @@
+<div class="grupo">
+    <br><br>
+    <h4>Spring Tools Suite</h4>
+    <br><br>
+    <h5>O que é</h5>
+    <br>
+    O Spring Tool Suite é um ambiente de desenvolvimento baseado em Eclipse que Ã© customizado para desenvolver aplicativos Spring. Ele fornece um ambiente pronto para uso para implementar, depurar, executar e implantar seus aplicativos Spring, incluindo integrações para o Pivotal tc Server, o Pivotal Cloud Foundry, o Git, o Maven, o AspectJ e muito mais. 
+    <br><br>
+    <h5>Instalação</h5>
+    <br>
+    No site https://spring.io/tools   fiz o dewnloads da ultima versão, caso Spring Tools 4. Copei na pasta Develop/IDE e descompactei. Renomiei o nome da pasta  para SpringToolSuite4  para melhor o entendimento.
+    <br><br>
+    Ficando assim C:\Develop\IDE\SpringToolSuite4
+    <br><br>
+    <img src="springboot/instalacao-spring-tools.png"  class="img-fluid" alt="diretorio e pasta craida" title="diretorio pasta de instalaÃ§Ã£o"> 
+    <br><br>
+    <h5>Executando Spring Tools Suite 4</h5>
+    <br><br> 
+    <img src="springboot/executando-spring-tools.png"  class="img-fluid" alt="executando spring tools" title="executando spring tools"> 
+    <br><br> 
+    A primeira coisa que ele vai pedir que informe  a pasta, onde vai ficar os projetos. Neste caso informei a pasta C:\Develop\Workspace  e marque  use como default.<br><br> Todos os projetos utilizando o Spring Tools 4  iram ficar dentro desta  pasta. Assim fica facil de localizar.
+    <br><br> 
+    
+    <img src="springboot/pasta-workspace.png"  class="img-fluid" alt="informe ao spring tools a direotiro e pasta criada" title="informando a pasta workspace">
+    <br><br> 
+    Pronto instalado. Esta é a tela principal. 
+    <br><br> 
+    
+    <img src="springboot/tela-principal-spring-tools.png"  class="img-fluid" alt="tela principal do spring tools" title="tela principal spring tools">
+    <br><br> 
+    <br><br>
+    <h5>Iniciando um Projeto Web </h5>
+    <br><br>
+    
+    <br><br>
+    Existem duas formas corretas de se criar um projeto Spring Boot.
+    Utilizando o Wizard do STS, ou entÃ£o acessando o site Spring Initializr.
+    
+    Utilizando o STS do String Tool
+    
+    <br><br>
+    Agora vamos fazer um teste bem simples. São para saber se estão funcionando.<br> Clique em File/New/Spring Starter Project
+    <br><br>
+    <img src="springboot/iniciando-projeto-web.png"  class="img-fluid" alt="inicializaÃ§Ã£o projeto web para teste" title="iniciando projeto web">
+    <br><br> 
+    
+    Temos que preencher alguns campos nesta tela, dentre eles:
+    <br><br>
+    <b>Name</b> Ã‰ o nome do projeto, que tambÃ©m serÃ¡ usado para criar o diretório do mesmo. VocÃª pode adicionar, por exemplo, meuApp. No caso estamos utilzando demoWeb
+    <br>
+    Type Deixe maven selecionado 
+    <br>
+    <b>Packaging</b> A forma como o projeto será empacotado. Deixe o valor padrão, jar. Isso significa que o projeto todo serÃ¡ compilado para um Ãºnico arquivo .jar, que podera ser executado pelo Maven. Existe tambÃ©m a opção .war que é uma outra forma de empacotar o projeto, sÃ³ que para ser usada como um container de algum servidor web, como o Tomcat.
+    <br>
+    <b>Java version</b> A versão do Java. Usamos a 8 como padrão.
+    Language Existem hoje, além do Java, as linguagem Kotlin e Grovvy. Todas as 3 são compiladas no mesmo ByteCode, então você pode escolher a linguagem que estiver mais acostumado. 
+    Estamos utilizando Java.
+    <br>
+    <b>Group</b> O group é o iniicio da definição do seu package. Um package deve ser um namespace do seu projeto. Para se obter isso, é aconselhavel usar a url do seu site pessoal ou da empresa onde trabalha, de forma invertida. Por exemplo, se o meu site é providerhost.com.br, o Group seria br.com.providerhost. Tambem pode deixar com.providerhost.
+    Artifact é o nome do projeto que sera concatenado ao Group. Suponha que o seu projeto se chama Gestão Comercial, um bom nome de Artifact seria somente comercial.
+    <br>
+    <b>Version</b> è a versão do seu software. Deixe com -SNAPSHOT no final para que a versÃ£o seja compilada no modo desenvolvimento, com ferramentas extras de Debug, por exemplo.
+    <br>
+    <b>Description</b> A descrição do projeto - Aqui geralmente se coloca uma breve descrição do que é o projeto
+    <br>
+    <b>package</b> O caminho completo do pacote da sua aplicação. É comum usar o Group junto com o Artifact. No caso deste projeto, estamos usando com.providerhost.meuprojeto, entÃ£o lembre-se de alterar isso de acordo com a sua necessidade. Utilizarei com.providerhost.demoweb
+    <br><br> 
+    
+    <img src="springboot/preenchendo-campo-projeto-web.png"  class="img-fluid" alt="preenchendo os dados" title="preenchendo informaÃ§oes">
+    <br><br> 
+    Clique em Next<br> 
+    <br><br> 
+    
+    Nesta tela Ã© onde  escolhemos as dependencias do projeto, isso Ã©, os modulos que compÃµem o projeto. Vamos escolher os seguintes modulos:
+    <br><br> 
+    DevTools Fornece uma sÃ©rie de facilidades, dentre elas a habilidade de reiniciar o servidor instantaneamente apos uma modificaçãoo no codigo fonte, e tambÃ©m com live-reload, que atualiza a pÃ¡gina web apÃ³s uma modificaÃ§Ã£o.
+    <br>
+    JPA é a camada de persistÃªncia do Spring/Java, incluindo o Hibernate por exemplo. Através do JPA vamos criar classes java que sÃ£o o mapeamento de uma Tabela e realizar operaÃ§Ãµes de inclusÃ£o, exclusÃ£o e alteraÃ§Ã£o de dados.
+    <br>
+    Web ProvÃª todas as funcionalidades Web junto com o servidor TomCat, permitindo que se possa criar rotas RESTfull de forma facil atraves de anotations.
+    MySql O modulo MySql para que o JPA conecte no banco.
+    
+    E sao digitar no campo Avaliable:  por exemplo digite web <br> 
+    
+     Aqui podemos ja incluir as dependencias caso já¡ saiba o que vai utilizar vou deixar  selecionar Web, deixando assim para depois a inclusao  de mais dependencias. <br> 
+    
+    Masquei Spring Web Start <br> 
+    
+    Agora   basta clicar em Finish<br> 
+    
+    <br><br>
+    <img src="springboot/selecione-dependecias.png" class="img-fluid" alt="preenchendo mais informaÃ§oes" title="preenchendo mais informaÃ§oes">
+    <br><br> 
+    Ele vai processar agora é só aguardar um pouco...
+    <br><br> 
+    Apos toda o processo meu primeiro projeto foi criado. Vou executa para ver se tudo correu bem. <br>
+    Abro a pasta DemoWeb / src/main/java o pacote com.providerhost e clico no arquivo DemoWebApplication.java. Uma vez aberto o arquivo 
+    <br><br> 
+    
+    <img src="springboot/visualizando-projeto.png" class="img-fluid" alt="projeto criado" title="visualizando projeto web">
+    <br><br> 
+    
+    Uma vez aberto o arquivo, cliquei no botao direito do mouse para ativar o menu de opções e escolhi Run as / Spring Boot App conforme imagem abaixo<br> Lembre-se que as vezes que for executar o projeto fazer sempre o mesmo
+    
+    <br><br> 
+    
+    <img src="springboot/executando-projeto.png"  class="img-fluid" alt="executando projeto" title="executando projeto web">
+    <br><br> 
+    No console vai mostrar que está sendo montando 
+    <br><br> 
+    
+    <img src="springboot/visualizando-console.png"  class="img-fluid" alt="imagem do console" title="visualizando informaÃ§oes do console">
+    <br><br>
+    Observe se nas mensagens, se deu tudo certo<br>
+    Aqui no console podemos ver que o Tomcat já foi estartado. Uma das vantagens do Spring Boot 
+    <br><br> 
+    
+    <img src="springboot/informacao-console.png"  class="img-fluid" alt="informaÃ§oes do console" title="informacao console">
+    <br><br>
+    
+    Aqui deu tudo certo. Então abri o browser no caso utilizei o Chrome  e digitei http://localhost:8080
+    <br><br> 
+    
+    <img src="springboot/visualizando-primeiro-projeto.png" class="img-fluid" alt="cisualizando o resultado no navegador" title="visualizando primeiro projeto">
+    <br><br>
+    Como não programei nada até agora a mensagem é esta mesmo. Tudo certo.<br> A instalação do Spring Tools  e o inicio do projeto estao ok. 
+    
+    
+    <br><br>
+    <br><br>
+    
+    
+    
+    
+    <div class="card text-white bg-primary mb-3" >
+      <div class="card-header">
+        Possíveis erros
+      </div>
+      <div class="card-body">
+       
+        <p class="card-text">
+            Se  estiver utilizando a porta 8080 
+            Para que utilizar Wamp, Xamp ou outros deve desativar dando o stop, finaliza a execução. Também pode   retire da inicialização do windows CTRL+ Alt + Delete , opção gerenciador de tarefas , finaliza tarefa 
+            <br>
+            Se nÃ£o conseguir resolver assim, a questão da porta deve resolver com server.port = 80, coloque no arquivo pom.xml. <br>
+            No menu opção configurações explico como fazer.
+        </p>
+       
+      </div>
+    </div>
+    
+    </div>

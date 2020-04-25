@@ -1,0 +1,135 @@
+<div class="grupo">
+    <br><br>
+    <h4>Configuraçoes</h4>
+    <br><br>
+    Vamos fazer alguns ajuste 
+    <br><br>
+    A  primeira coisa é criarmos pacotes ou packages para ficar no padrao MVC
+    <br><br>
+    
+    O que é <br><br>
+    Pacotes -  A priore podemos dizer que é uma pasta com o nome que identifique seu conteudo. Neste caso a pasta  contem um grupo de classes relacionadas, onde algumas das classes são acessÃiveis e outras sao mantidas para fins internos.
+    <br><br>
+    Porque utilizar<br><br>
+    Localização e uso de classes, interfaces, enumeraçoes e anotações mais faceis 
+    Fornecendo acesso controlado: protected e default possuem controle de acesso em nÃivel de pacote. Um membro protegido é acessi­vel por classes no mesmo pacote e suas subclasses. Um membro padrão (sem qualquer especificador de acesso) é acessivel por classes no mesmo pacote apenas.
+    <br><br>
+    Como utilizar<br><br>
+    Convenções de nomenclatura de pacotes:
+    Os pacotes são nomeados na ordem inversa dos nomes de domi­nio, ou seja, br.com.prividerhost.vendaspdv. Por exemplo, utilizei o nome do meu domÃ­nio, mais o nome do projeto 
+    <br><br>
+    Na pratica!
+    <br><br>
+    <img src="springboot/criando-packege.png"  class="img-fluid" alt="criando as pastas para deixar no padrao MVC" title="criando as packages"> 
+    <br><br>
+    com.providerhost.controllers<br>
+    com.providerhost.model<br>
+    com.providerhost.components<br>
+    com.providerhost.entitys<br>
+    
+    com.providerhost.repository<br>
+    com.providerhost.services<br>
+    <br><br>
+    
+    <img src="springboot/janela-criacao-package.png"  class="img-fluid" alt="visualizando a opÃ§Ã£o onde informamos os nomes da pasta a ser criada" title="janela criacao package"> 
+    <br><br>
+    Fica assim veja a imagem 
+    <br><br>
+    <img src="springboot/visualizando-packages-criadas.png"  class="img-fluid" alt="visualizando as pastas criadas" title="visualizando-packages-criadas"> 
+    <br><br>
+    <br><br>
+    
+    <div class="card text-white bg-primary mb-3" >
+      <div class="card-header">
+        Observações 
+      </div>
+      <div class="card-body">
+       
+        <p class="card-text">
+            O que é MVC?:<br>
+            MVC é atualmente o padrão arquitetural mais utilizado no desenvolvimento web, portanto seu conhecimento é fundamental para a construção de projetos bem estruturados. <br>
+            E normal encontrar no PHP as pastas   Model, View, Controller e DAO. Ja no java dependendo de qual fremework se utilza ou se Ã© Java para Web ou Desktop se muda essa nomenclatura. Por exemplo neste projeto as view fica em src/main/resources pasta templates.  E os css,js dentro src/main/resources pasta static.<br>
+    
+            O importante é sempre observar e seguir um padrao logico. 
+        </p>
+       
+      </div>
+    </div>
+    
+    <h4>Configurando application.properties</h4>
+    <br><br>
+    <br><br>
+    
+     application.properties é o arquivo onde adicionamos as configuraçõµes para o projeto. 
+    
+    O SpringBoot disponibiliza uma documentaÃ§Ã£o ampla onde podemos entender todas as configurações do application.properties: 
+    
+    
+    http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html 
+    <br><br>
+    <br><br>
+    Abra o arquivo
+    <br><br>
+    <img src="springboot/configurando-application-properties.png"  class="img-fluid" alt="configurando algumas propriedades necessarias" title="configurando-application-properties"> 
+    <br><br>
+    Agora vou digitar estas: 
+    <br>
+    spring.thymeleaf.cache = true <br>
+    server.port = 80
+    <a href="#" data-toggle="popover" title="Grade" data-content="ÃƒÂ© utilizada como uma forma alternativa de pesquisa. Ex. Grade : MacarÃƒÂ£o tipo parafuso; tipo espaguete fino; " data-placement="top" ><span class="fa fa-question-circle-o"></span>?</a>
+    <br><br> <br><br>
+    <h4>Configurando pom.xml</h4>
+    <br><br> <br><br>
+    POM é a unidade fundamental de trabalho no Maven. É um arquivo XML que contÃ©m informações sobre o projeto e detalhes de configuraÃ§Ã£o usados  pelo Maven para construir o projeto.
+    
+    <br><br> <br><br>
+    Agora, no arquivos pom.xml,  para tando clique no arquivo. veja na imagem abaixo
+    <br><br>
+    <img src="springboot/visualizando-conteudo-arquivo-pom.png"  class="img-fluid" alt="visualizando o conteudo dop arquivo" title="visualizando o arquivo pom.xml"> 
+    <br><br>
+    
+    Basicamente o que vamos mexer são as dependencias, no caso incluir mais.<br>
+    Mais antes observando o que ja vem.
+    <br>
+    - o spring-boot-starter-web, que adiciona as dependencias do Spring MVC;<br>
+    - O spring-boot-starter-test é a principal dependÃªncia que contem a maioria dos elementos necessarios para  testes;<br>
+    
+    <br><br>A estrutura Ã© esta <br><br>
+    <pre><textarea rows=5 cols=100 readonly>
+    
+    &lt;dependency&gt;
+       &lt;groupId&gt;&lt;/groupId&gt;
+       &lt;artifactId&gt;&lt;/artifactId&gt;
+    &lt;/dependency&gt;
+    
+        
+     </textarea></pre>
+    
+    
+    <br><br> <br><br>
+    Aqui o Spring Boot facilita a vida do programador. É só incluir as dependencias que necessitamos e o spring boot faz o downloads da versao correta sem conflitos de instalaÃ§Ã£o. 
+     <br><br>
+    <img src="springboot/incluindo-pedendecias.png"  class="img-fluid" alt="incluindo dependÃªncia" title="incluindo-pedendecias"> 
+    <br><br>
+    
+    Vamos incluir no arquivos pom.xml  a dependencia spring-boot-starter-thymeleaf<br>
+    <br><br>
+    
+    Thymeleaf é uma biblioteca baseada em Java usada para criar um aplicativo da web. Ele fornece um bom suporte para servir um XHTML / HTML5 em aplicativos da web. 
+    <br><br>
+    <pre><textarea rows=5 cols=100 readonly>
+    
+    &lt;dependency&gt;
+       &lt;groupId&gt;org.springframework.boot&lt;/groupId&gt;
+       &lt;artifactId&gt;spring-boot-starter-thymeleaf&lt;/artifactId&gt;
+    &lt;/dependency&gt;
+    
+     </textarea></pre>
+    <br><br>
+    
+    Até aqui só configuramos ...
+    
+    </div>
+    
+    
+    

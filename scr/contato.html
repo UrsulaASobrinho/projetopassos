@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<h1>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contato</title>
+    <%- include('partials//head.html') %>
+</head>
+
+<body>
+
+    <%- include('partials//navbar.html') %>
+
+    <div class="container p-4">
+        <div class="jumbotron">
+            <h1 class="display-4">Ola pessoal !</h1>
+            <p class="lead">Este espaço foi criado para estudos</p>
+            <hr class="my-4">
+            <p>Aqui incluirei meu passo-a-passo e os fonts das aplicações </p>
+            <p> </p>
+
+            <!--Botao informação-->
+            <p>
+                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Informações
+                </a>
+
+            </p>
+            <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    Este espaço foi criado com Node js, utilizando: No servidor o framework express, as bibliotecas ejs,
+                    morgan, nas views Bootstrap, um pouco de CSS, fonts  AWESOME e GOOGLE FONTS.
+                    Foram aplicados padraos de rotas e MVC, os fonts estão disponiveis no GitHub
+                    https://github.com/UrsulaASobrinho/projetopassos.git
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- FOOTER -->
+    <%- include('partials//footer.html') %>
+
+</body>
+
+</html>
