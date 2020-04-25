@@ -28,6 +28,25 @@ router.get('/qa', (req, res, next) => {
 });
 
 
+router.get('/qaa', (req, res, next) => {
+    res.render('livrosjava/capitulo2.html', {
+        title: "Livro - Java como programa"
+    });
+});
+
+router.get('/re', (req, res, next) => {
+    res.render('livrosjava/resumo1.html', {
+        title: "Livro - Java como programa"
+    });
+});
+
+router.get('/ree', (req, res, next) => {
+    res.render('livrosjava/resumo2.html', {
+        title: "Livro - Java como programa"
+    });
+});
+
+
 router.get('/spring', (req, res, next) => {
     res.render('spring.html', {
         title: "Spring Boot "

@@ -1,4 +1,4 @@
-var vetRespostas = [2, 1, 2, 3, 3, 3,  2,3,1,1,1, 1,1,1,1,1,1,1,1,1,1,1,1];
+var vetRespostas = [2, 1, 1, 1, 1, 1, 1, 1, 1,   2, 1, 2, 1, 1, 1  ];
 var acertos = 0;
 var erros = 0;
 
