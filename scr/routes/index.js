@@ -21,6 +21,13 @@ router.get('/livros', (req, res, next) => {
     });
 });
 
+router.get('/qa', (req, res, next) => {
+    res.render('livrosjava/capitulo1.html', {
+        title: "Livro - Java como programa"
+    });
+});
+
+
 router.get('/spring', (req, res, next) => {
     res.render('spring.html', {
         title: "Spring Boot "
@@ -42,8 +49,11 @@ router.get('/instnodejs', (req, res, next) => {
 
 router.get('/deploy', (req, res, next) => {
     res.render('nodejs/deploy.html', {
-        title: "Node js - Deploy"
+        title: "Node js - Install"
     });
 });
+
+
+
 
 module.exports = router;
