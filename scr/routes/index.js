@@ -34,6 +34,14 @@ router.get('/qaa', (req, res, next) => {
     });
 });
 
+
+router.get('/pa', (req, res, next) => {
+    res.render('livrosjava/pratica-cap2.html', {
+        title: "Livro - Teoria na prática"
+    });
+});
+
+
 router.get('/re', (req, res, next) => {
     res.render('livrosjava/resumo1.html', {
         title: "Livro - Java como programa"
