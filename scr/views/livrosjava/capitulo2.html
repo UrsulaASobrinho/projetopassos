@@ -329,6 +329,11 @@
 	// Tooltips Initialization
 $(function () {
   $('[data-toggle="tooltip"]').tooltip()
+
+   // Showing and hiding tooltip with different speed
+   $(".tooltip-large").tooltip({
+        delay: {show: 0, hide: 500}
+    }); 
 })
 	</script>
 

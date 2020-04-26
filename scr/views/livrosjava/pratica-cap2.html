@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<h1>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/script.js"></script>
+
+	<title>Spring</title>
+    <!-- HEAD -->
+    <%- include('..//partials//head.html') %>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <%- include('..//partials//navbar.html') %>
+
+    <!-- MAIN CONTENT -->
+
+   
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+      <h4><br>
+		<center>Na pratica - exercicio capitulo 2 - (Paul Deitel)</center><br>
+	
+      </h4>
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+      <div class="box box-solid">
+        <div class="box-body">
+          <div class=container>
+          
+
+
+ <!--Botao informação-->
+
+
+ <div class="col-lg-12" style="text-align: right;">
+	<p>
+		
+		<a href="/" class="btn btn-outline-danger" role="button" aria-pressed="true">Retornar</a>
+		<a href="/livros" class="btn btn-outline-warning" role="button" aria-pressed="true">Questionário</a>
+		<a class="btn btn-outline-primary" data-toggle="collapse" href="#collapseExample" role="button"
+			aria-expanded="false" aria-controls="collapseExample">
+			Informações
+		</a>
+	
+	</p>
+</div>
+
+
+
+<div class="collapse" id="collapseExample">
+	<div class="card card-body">
+   Este é o exercíco  na prática do capítulo 2 do livro Java como programar. Aqui de forma mais simples utilizando 
+   o eclipse para faciliar :)
+	</div>
+</div>
+
+
+
+		<div id="dvCentro">
+      <h4> Dividindo em três etapas para melhor entendimento</h4>
+
+
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Extrutura do Projeto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Package e class</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Def. conteúdo classe e executando</a>
+        </li>
+      </ul>
+      <div class="tab-content" id="myTabContent">
+        <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+
+          <!--  extrutura-->
+
+      
+      <br><br>  
+      Nesta parte inicial criamos o esqueleto do projeto
+      <br><br>  
+      Nome do projeto: Welcome 
+      <br><br>
+
+      Abra o eclipse e utilize a opção <Br>
+     
+      <br><br>
+      <img src="img-cap2/cap2-criandoprojeto1.png"  class="img-fluid" alt="Abrinfo o eclipse" title="file , new , java Project"> 
+      <br>
+      File/ new / Java Project conforme imagem a acima
+      <br>Vai abrir uma janela de opções que devemos preencher com os seguintes dados<br>
+      Nome do projeto<br>
+      O restante dexar padrão  <br><br>
+      <img src="img-cap2/cap2-criandoprojeto1-passo1.png"  class="img-fluid" alt="Abrinfo o eclipse" title="file , new , java Project"> 
+      <br>
+      Observe aqui preenchemos o campo nome do projeto, neste caso deixamos padrao o diretorio/pasta 
+      <br> clique em next para observamos algumas informaçoes e comparamos com os capitulos que lemos. 
+
+      <br><br>
+      <img src="img-cap2/cap2-criandoprojeto1-passo2.png"  class="img-fluid" alt="Abrinfo o eclipse" title="file , new , java Project"> 
+      <br>
+      Nesta parte observe que existe uma pasta com o nome do projeto, uma pasta padrão de nome SCR, onde fica os códigos fonte que iremos criar, e lá no final observe que
+      ele cria uma pasta bin, levando a teoria na pratica.
+
+      <br>
+      Agora é só clicar em Finish e vamos termina de criamos o primeiro projeto
+
+      <br><br>
+      <img src="img-cap2/cap2-criandoprojeto1-passo3.png"  class="img-fluid" alt="Abrinfo o eclipse" title="file , new , java Project"> 
+      <br><br>
+      Apos criamos o esqueleto observamos que existe tres pastas
+      <br>
+      Welcome - pasta raiz do projeto, scr - pasta onde fica o código fonte qe iremos criar e JRE uma pasta de biliotecas
+      <br>
+
+      <div class="card text-white bg-primary mb-3" >
+        <div class="card-header">
+          Teoria
+        </div>
+        <div class="card-body">
+         
+          <p class="card-text">
+            bibliotecas de classes de [componentes reutilizáveis] de Java. Eles podem implementar
+            projetos [cap.2 page 3]
+            <br>
+            Runtime Environment (J2RE) que é instalada no computador local do
+            usuário. [resumo - cap.2 page 3]
+       
+          </p>
+         
+        </div>
+      </div>
+      
+
+    
+
+          <!-- fim extrutura-->
+
+
+        </div>
+        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          
+          
+          <!--  extrutura-->
+
+          <h4><br>
+            <center>Criando as Package</center><br>
+          
+              </h4>
+            
+      <br><br>  
+      Nesta parte criaremos package, que é nada mais que pastas no caso aqui vai ser uma subpasta, 
+      porque vai ficar dvCentroda pasta já existente scr
+
+      <br> Na lógica é arrumar fazer subdivisao. No caso é uma extrutura de pacotes <br>
+      <br><br>
+      <img src="img-cap2/cap2-criandopackage.png"  class="img-fluid" alt="Abrinfo o eclipse" title="file , new , java Project"> 
+      <br><br>
+      Click com o botão em cima da pasta scr , vai abrir uma aba , escolha a opção new/package e de um nome para a pasta
+      <br><br>
+      <img src="img-cap2/cap2-criandopackage-passo1.png"  class="img-fluid" alt="Abrinfo o eclipse" title="file , new , java Project"> 
+      <br>
+      Confirme
+      <br><br>
+      <img src="img-cap2/cap2-criandopackage-passo2.png"  class="img-fluid" alt="Abrinfo o eclipse" title="file , new , java Project"> 
+           
+      <br><br>  
+      <h4><br>
+        <center>Criando a classes</center><br>
+      
+          </h4>
+        <br>
+        
+        Com botão direito do mouse em cima da pasta escolha a opção, conforme imagem
+       <br><br>
+      <img src="img-cap2/cap2-criandoclass.png"  class="img-fluid" alt="Abrinfo o eclipse" title="file , new , java Project"> 
+           
+      <br><br>
+      <img src="img-cap2/cap2-criandoclass-passo1.png"  class="img-fluid" alt="Abrinfo o eclipse" title="file , new , java Project"> 
+     <br>
+     Observe açgumas pontos importantes: <br>
+
+     Source codigo = local onde sera Criando<br>
+
+     Package = o pacote <br>
+
+     Name = o nome da classe, e não poderia deixar de exemplificar com HelloWord ! <br>
+
+     Public = o tipo ou melhor o metodo  de classe que esta sendo criada, seria como O nível de visibilidade de um arquivo dentro de uma pasta. Nesta caso é public que será visivel para todos
+     <br>
+    Public static void main   = ha!!   essa é a mão na roda :)  o eclipse cria automaticamente a estrutura da classe
+     <br><br>
+      <img src="img-cap2/cap2-criandoclass-passo2.png"  class="img-fluid" alt="Abrinfo o eclipse" title="file , new , java Project"> 
+      <br><br>
+     
+
+      <div class="card text-white bg-primary mb-3" >
+        <div class="card-header">
+          Teoria
+        </div>
+        <div class="card-body">
+         
+          <p class="card-text">
+            Lembrado um pouco do que lemos observe, apos o nome do package temos um Ponto-e-virgula;
+            Na criação do metodo temos chaves de abertura e fechamento {} e na classe a mesma coisa. 
+        
+          </p>
+         
+        </div>
+      </div>
+      
+
+          ...</div>
+        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+
+
+                <!--  extrutura-->
+
+                <h4><br>
+                  <center>Aqui vamos definir o que esta classe vai fazer, ou seja a que ela se destina </center><br>
+                
+                    </h4>
+                  
+            <br><br> 
+            Neste caso é apenas uma mensagem de informação <br> 
+            
+            Vamos digitar dentro da classe o comondo System.out.print("Meu primeiro código!!!");
+
+            <br>
+            
+            
+            
+
+            E vamos observar mais uma facilidade do eclipse o autocomplite <br> facilita a escrita , diminui os erros...<br>
+
+            <br><br>
+            <img src="img-cap2/cap2-criandoclass-passo3.png"  class="img-fluid" alt="Abrinfo o eclipse" title="file , new , java Project"> 
+            <br><br>
+                    E não para por ai o eclipse, ao salvar CTRL + S o projeto é copilado, e caso tenha algum erro, vai ser mostrado em tela. 
+
+            <br><br>
+            <img src="img-cap2/cap2-criandoclass-passo4.png"  class="img-fluid" alt="Abrinfo o eclipse" title="file , new , java Project"> 
+            <br><br>
+         
+            Agora vamos salvar e executar !!  vê se funciona 
+          
+                    Com as tecla CTRL + S = salvar
+
+                    <br>
+                    Para executar siga conforme imagem 
+                    <br><br>
+                    <img src="img-cap2/cap2-executando.png"  class="img-fluid" alt="ve se funciona" title="executando o porjeto"> 
+                    <br><br>  
+                    
+                    
+                    <div class="card text-white bg-primary mb-3" >
+                      <div class="card-header">
+                        Teoria
+                      </div>
+                      <div class="card-body">
+                       
+                        <p class="card-text">
+                          O método System, out.printl n exibe (ou imprime) uma linha de texto na janela de comando. Quando
+                          System, ou t .printl n completa sua tarefa, automaticamente posiciona o cursor de saída (a localização na qual
+                          o próximo caractere será exibido) no início da próxima linha na janela de comando. (Este movimento do cursor é semelhante ao pressionamento da tecla Enter quando se digita em um editor de texto - o cursor aparece no início da
+                          próxima linha em seu arquivo). [page 32]
+                                    
+                        </p>
+                       
+                      </div>
+                    </div>
+              
+
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+      
+      </div>
+
+
+
+
+
+               
+	</div>
+</div>
+</div>
+
+
+</main>
+
+
+
+
+
+<!-- FOOTER -->
+<%- include('..//partials//footer.html') %>
+
+<script>	
+	// Tooltips Initialization
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+	</script>
+
+<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+
+</body>
+
+</html>
