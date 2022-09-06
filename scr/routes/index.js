@@ -67,6 +67,8 @@ router.get('/node', (req, res, next) => {
     });
 });
 
+
+
 router.get('/instnodejs', (req, res, next) => {
     res.render('nodejs/instnodejs.html', {
         title: "Node js - Install"
@@ -80,6 +82,11 @@ router.get('/deploy', (req, res, next) => {
     });
 });
 
+router.get('/no', (req, res, next) => {
+    res.render('devops.html', {
+        title: "DevOps"
+    });
+});
 
 
 
