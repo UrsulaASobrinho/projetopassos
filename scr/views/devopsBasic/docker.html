@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<h1>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	<script type="text/javascript" src="js/script.js"></script>
+
+	<title>Docker</title>
+    <!-- HEAD -->
+    <%- include('..//partials//head.html') %>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <%- include('..//partials//navbar.html') %>
+
+    <!-- MAIN CONTENT -->
+
+   
+    <main role="main">
+      <div class="album py-5 bg-light">
+          <div class="container">
+
+            <div class="col-lg-12" style="text-align: right;">
+              <p>
+                
+                <a href="/basicDevOps" class="btn btn-outline-danger" role="button" aria-pressed="true">Retornar</a>
+              
+              
+              </p>
+            </div>
+
+              <div class="row">
+             
+                  
+                  <div class="grupo">
+                      <br><br>
+                      <h4>Docker</h4>
+                      <br><br>
+                      <h5>O que é</h5>
+                      <br>
+                      <b>O Docker</b> - Podemos dizer que ele pega uma espaço e criem container. 
+                      e o Um container é um ambiente independentemente isolado. Onde podemos colocar um sistema, configuralo adcionar aplicatidos tudo
+                      isso sem alterar as configuraçoes dos outros espaços, ou do todo. Dentro desde espaço virtualizando o sistema operacional do computador.
+
+                      <br><br>
+                      Você mantém seu espaço de trabalho limpo, pois cada um de seus ambientes será isolado e você pode excluí-los a qualquer momento, sem impactar o resto.
+                      <br><br>
+                    
+
+
+                      <h5>Instalação</h5>
+                      <br><br>
+                      instalar o Docker no Windows 10, como habilitar e executar Windows Containers.
+                      <br><br>
+                      <b>Pré-requisitos</b>
+                      Existem alguns pré-requisitos que precisamos configurar no windows 10
+                      para saber mais pode consultar Tutorial oficial: 
+                      https://docs.microsoft.com/en-us/windows/wsl/install-win10
+                      <br><br>
+
+
+<b>Passo 1</b> <br>
+(PowerShell Admin): <br> Abre o cmd como admnistrador. e cola copia esse comando abaixo: <br> 
+<img src="img-devops/abreCMD.png"  class="img-fluid" alt="Gerenciados de tarefas para configurar" title="pre-requisitos"> 
+ <br>
+cola copia esse comando abaixo: <br>                    
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+<br><br>
+<img src="img-devops/digitalcomondaoResultdo.png"  class="img-fluid" alt="Gerenciados de tarefas para configurar" title="pre-requisitos"> 
+<br>Resultado da execução primeiro passo
+<br><br>
+<b>Passo 2</b> <br>
+ainda no (PowerShell Admin):  e cola copia esse comando abaixo: <br> 
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+<br><br>
+<img src="img-devops/digitasegundocomando.png"  class="img-fluid" alt="Gerenciados de tarefas para configurar" title="pre-requisitos"> 
+<br>Resultado da execução segundo passo
+<br><br>
+
+
+
+<b>Passo 3</b> 
+REINICIE O COMPUTADOR
+<br><br>
+
+<b>Passo 4</b> 
+Abre teu browser e faz o  (Download the Linux kernel update package):<br>
+copia e cola esse link abaixo para fazer o downloads <br>
+https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi
+<br><br>
+apos fazer downloads executa<br>
+<img src="img-devops/ExecutaArqBaixadoWsl.png"  class="img-fluid" alt="Gerenciados de tarefas para configurar" title="pre-requisitos"> 
+<br><br>
+<b>Passo 5</b> 
+Volta no  (PowerShell Admin): e digita o comando abaixo: <br>
+wsl --set-default-version 2<br>
+<img src="img-devops/executacomandodenovo.png"  class="img-fluid" alt="Gerenciados de tarefas para configurar" title="pre-requisitos"> 
+<br>Resultado da execução quinto passo
+<br><br>
+
+<br><br>
+<b>Passo 6</b> (Instale o docker):
+Tutorial: https://docs.docker.com/docker-for-windows/install/
+<br><br>
+Apos dazer o downloads, executa<br>
+<img src="img-devops/aposinstalatPrimeiroClick.png"  class="img-fluid" alt="Gerenciados de tarefas para configurar" title="pre-requisitos"> 
+<br><br>
+Clica no icone no desctop<br>
+<img src="img-devops/dockerinstalado.png"  class="img-fluid" alt="Gerenciados de tarefas para configurar" title="pre-requisitos"> 
+
+<br><br> Ptonto!!  <br><br>             
+                      
+                      <div class="card text-white bg-primary mb-3" >
+                        <div class="card-header">
+                          Possi­veis erros
+                        </div>
+                        <div class="card-body">
+                         
+                          <p class="card-text">
+                            Verificar os requisitos<br>
+                            Windows 10 Enterprise, Pro ou Education<br>
+                            Processador de 64 bits com SLAT (Conversão de Endereços de Segundo Nível).<br>
+                            Suporte de CPU para a extensão do modo de monitor da VM (VT-c em CPUs Intel).<br>
+                            Mínimo de 4 GB de memória.<br>
+                          <br>
+                        
+                          </p>
+                         
+                        </div>
+                      </div>
+                      
+                      </div>
+  
+                 
+              </div>
+          </div>
+      </div>
+  
+  
+  </main>
+  
+
+
+
+
+<!-- FOOTER -->
+<%- include('..//partials//footer.html') %>
+
+<script>	
+	// Tooltips Initialization
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+
+  
+})
+	</script>
+
+<script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+
+</body>
+
+</html>

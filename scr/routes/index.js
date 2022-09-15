@@ -88,6 +88,24 @@ router.get('/no', (req, res, next) => {
     });
 });
 
+router.get('/basicDevOps', (req, res, next) => {
+    res.render('devopsBasic/basic.html', {
+        title: "DevOps introdução"
+    });
+});
+
+router.get('/git', (req, res, next) => {
+    res.render('devopsBasic/git.html', {
+        title: "Git GitHub e GitLab  -  Install e comandos...resumo"
+    });
+});
+
+router.get('/docker', (req, res, next) => {
+    res.render('devopsBasic/docker.html', {
+        title: "Git GitHub e GitLab  -  Install e comandos...resumo"
+    });
+});
+
 
 
 module.exports = router;
